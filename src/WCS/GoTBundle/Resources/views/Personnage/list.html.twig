@@ -2,6 +2,36 @@
 
 {% block title %}WCSGoTBundle:Personnage:list{% endblock %}
 
-{% block body %}
-<h1>Welcome to the Personnage:list page</h1>
-{% endblock %}
+	{% block pageTitle %}Welcome to the Personnage:list page{% endblock %}
+	{% block body %}
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div>
+						{% for personnage in personnages %}
+							<div class="col-md-4">
+								<div class="profile-card text-center">
+									<img class="img-responsive" src="http://img00.deviantart.net/58ec/i/2012/151/4/c/catelyn_stark_by_sannalee01-d51tnu7.jpg">
+									<div class="profile-info">
+
+										<!--<img class="profile-pic" src="https://pbs.twimg.com/profile_images/711000557742395396/jzm8hqwW.jpg">-->
+
+										<h2 class="hvr-underline-from-center">
+											{{ personnage.nom }}
+											<span>{{ personnage.sexe }}</span>
+										</h2>
+										<div>
+											{{ personnage.bio }}
+										</div>
+										<a href="{{path('wcs_got_perso_change_royaume')}}">Change Royaume</a>
+									</div>
+
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	{% endblock %}

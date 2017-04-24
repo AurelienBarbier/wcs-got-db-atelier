@@ -36,6 +36,13 @@ class Personnage
     private $sexe;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="bio", type="string", length=255)
+     */
+    private $bio;
+
+    /**
      * @ORM\ManyToOne(targetEntity="Royaume")
      */
     private $royaume;
@@ -98,5 +105,28 @@ class Personnage
     {
         return $this->sexe;
     }
-}
 
+    /**
+     * Set royaume
+     *
+     * @param \WCS\GoTBundle\Entity\Royaume $royaume
+     *
+     * @return Personnage
+     */
+    public function setRoyaume(\WCS\GoTBundle\Entity\Royaume $royaume = null)
+    {
+        $this->royaume = $royaume;
+
+        return $this;
+    }
+
+    /**
+     * Get royaume
+     *
+     * @return \WCS\GoTBundle\Entity\Royaume
+     */
+    public function getRoyaume()
+    {
+        return $this->royaume;
+    }
+}

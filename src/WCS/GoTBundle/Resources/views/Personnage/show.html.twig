@@ -2,6 +2,27 @@
 
 {% block title %}WCSGoTBundle:Personnage:show{% endblock %}
 
+{% block pageTitle %}Welcome to the Personnage:show page{% endblock %}
 {% block body %}
-<h1>Welcome to the Personnage:show page</h1>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<img src="http://img00.deviantart.net/58ec/i/2012/151/4/c/catelyn_stark_by_sannalee01-d51tnu7.jpg"  alt="" class="img-responsive img-rounded">
+			</div>
+			<div class="col-md-8">
+				<blockquote>
+					<p>
+					{{personnage.nom}}
+					</p>
+					<small><cite title="Source Title">{{personnage.royaume.capitale}}, {{personnage.royaume.nom}}</cite></small>
+				</blockquote>
+				<p>
+					{{personnage.bio}}
+				</p>
+			</div>
+		</div>
+	</div>
+
 {% endblock %}

@@ -5,13 +5,10 @@
 	{% block body %}
 		<div class="container">
 			<div class="row">
-
 				<div class="col-lg-12">
 					<div>
-
 						<div class="col-md-4 col-md-offset-1">
 							<div class="profile-card text-center">
-
 								<img class="img-responsive" src="http://hd4wallpapers.net/wp-content/uploads/2016/03/Game-Of-Thrones-Iphone-Wallpaper-Hd.jpg">
 								<div class="profile-info">
 
@@ -20,7 +17,8 @@
 									<h2 class="hvr-underline-from-center">Personnages<span>Ajout / Suppression</span></h2>
 									<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
 									<a href="{{path('wcs_got_perso_add')}}">Add</a>
-									<a href="{{path('wcs_got_perso_list')}}">List</a>
+									<a href="{{path('wcs_got_perso_list', {'sexe' : 'F'})}}">List F</a>
+									<a href="{{path('wcs_got_perso_list', {'sexe' : 'M'})}}">List M</a>
 								</div>
 
 							</div>
@@ -34,7 +32,7 @@
 
 									<!--<img class="profile-pic" src="https://pbs.twimg.com/profile_images/711000557742395396/jzm8hqwW.jpg">-->
 
-									<h2 class="hvr-underline-from-center">Royaume<span>Ajouts</span></h2>
+									<h2 class="hvr-underline-from-center">Royaumes<span>Ajouts</span></h2>
 									<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
 									<a href="{{path('wcs_got_royaume_list')}}">Add</a>
 									<a href="{{path('wcs_got_royaume_list')}}">List</a>

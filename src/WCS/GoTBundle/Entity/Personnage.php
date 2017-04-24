@@ -36,6 +36,13 @@ class Personnage
     private $sexe;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="bio", type="string", length=255)
+     */
+    private $bio;
+
+    /**
      * @ORM\ManyToOne(targetEntity="Royaume")
      */
     private $royaume;
@@ -121,5 +128,29 @@ class Personnage
     public function getRoyaume()
     {
         return $this->royaume;
+    }
+
+    /**
+     * Set bio
+     *
+     * @param string $bio
+     *
+     * @return Personnage
+     */
+    public function setBio($bio)
+    {
+        $this->bio = $bio;
+
+        return $this;
+    }
+
+    /**
+     * Get bio
+     *
+     * @return string
+     */
+    public function getBio()
+    {
+        return $this->bio;
     }
 }

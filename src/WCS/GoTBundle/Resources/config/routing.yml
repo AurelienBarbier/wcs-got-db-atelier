@@ -3,11 +3,11 @@ wcs_got_homepage:
     defaults: { _controller: WCSGoTBundle:Default:index }
 
 wcs_got_perso_show:
-    path:     /perso/show
+    path:     /perso/show/{id}
     defaults: { _controller: WCSGoTBundle:Personnage:show }
 
 wcs_got_perso_list:
-    path:     /perso/list
+    path:     /perso/list/{sexe}
     defaults: { _controller: WCSGoTBundle:Personnage:list }
 
 wcs_got_perso_add:
