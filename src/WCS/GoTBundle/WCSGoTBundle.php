@@ -1,9 +1,9 @@
 <?php
 
-namespace AppBundle;
+namespace WCS\GoTBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class AppBundle extends Bundle
+class WCSGoTBundle extends Bundle
 {
 }

@@ -1,0 +1,31 @@
+wcs_got_homepage:
+    path:     /
+    defaults: { _controller: WCSGoTBundle:Default:index }
+
+wcs_got_perso_show:
+    path:     /perso/show
+    defaults: { _controller: WCSGoTBundle:Personnage:show }
+
+wcs_got_perso_list:
+    path:     /perso/list
+    defaults: { _controller: WCSGoTBundle:Personnage:list }
+
+wcs_got_perso_add:
+    path:     /perso/add
+    defaults: { _controller: WCSGoTBundle:Personnage:add }
+
+wcs_got_perso_change_royaume:
+    path:     /persochange-royaume
+    defaults: { _controller: WCSGoTBundle:Personnage:changeRoyaume }
+
+wcs_got_perso_delete:
+    path:     /perso/delete
+    defaults: { _controller: WCSGoTBundle:Personnage:delete }
+
+wcs_got_royaume_list:
+    path:     /royaume/list
+    defaults: { _controller: WCSGoTBundle:Royaume:list }
+
+wcs_got_royaume_add:
+    path:     /royaume/add
+    defaults: { _controller: WCSGoTBundle:Royaume:add }
